@@ -1,0 +1,297 @@
+body.theme-dark,
+body.theme-light {
+	color-scheme: dark;
+	--line-height-normal: 1.25;
+	--font-text-theme: "Droid Sans Mono", monospace;
+	--font-monospace-theme: "Droid Sans Mono", monospace;
+
+	--background-primary: #000000;
+	--background-primary-alt: #000000;
+	--background-secondary: #272727;
+	--background-secondary-alt: #272727;
+	--background-modifier-border: #3e3e3e;
+	--background-modifier-border-hover: #545454;
+	--background-modifier-hover: #545454;
+	--background-modifier-active-hover: #545454;
+	--background-modifier-form-field: #00000000;
+	--background-modifier-box-shadow: #00000000;
+	--background-modifier-success: #91DFA6;
+	--background-modifier-error: #FF7B7B;
+	--background-modifier-error-rgb: 255, 123, 123;
+	--background-modifier-message: #272727;
+	--background-modifier-cover: rgba(0, 0, 0, 0.8);
+
+	--text-normal: #FFFFFF;
+	--text-muted: #FFFFFF;
+	--text-faint: #FFFFFF;
+	--text-accent: #5BCDFA;
+	--text-accent-hover: #5BCDFA;
+	--text-on-accent: #FFFFFF;
+	--text-error: #FF7B7B;
+	--text-success: #91DFA6;
+	--text-warning: #FFDAA9;
+	--text-selection: #FCA4E466;
+	--text-highlight-bg: #5BCDFA84;
+	--text-highlight-bg-active: #545454;
+	--link-color: #FCA4E4;
+	--link-color-hover: #FFD1F4;
+	--link-external-color: #FCA4E4;
+	--link-external-color-hover: #FFD1F4;
+	--icon-color: #FFFFFF;
+	--icon-color-hover: #5BCDFA;
+	--icon-color-focused: #FFFFFF;
+	--tag-color: #FFFFFF;
+	--tag-background: #3e3e3e;
+
+	--interactive-normal: #272727;
+	--interactive-hover: #545454;
+	--interactive-accent: #FCA4E4;
+	--interactive-accent-hover: #FCA4E4;
+	--interactive-accent-rgb: 252, 164, 228;
+
+	--titlebar-background: #272727;
+	--titlebar-background-focused: #272727;
+	--ribbon-background: #272727;
+	--tab-background-active: #272727;
+	--tab-background-inactive: #000000;
+	--tab-text-color-active: #FFFFFF;
+	--tab-text-color-inactive: #b1b1b1;
+	--tab-outline-color: #545454;
+	--tab-divider-color: #3e3e3e;
+	--divider-color: #3e3e3e;
+	--indentation-guide-color: #3e3e3e;
+	--indentation-guide-color-active: #545454;
+	--nav-indentation-guide-color: var(--indentation-guide-color-active);
+	--scrollbar-bg: #00000000;
+	--scrollbar-thumb-bg: #545454;
+	--scrollbar-active-thumb-bg: #6e6e6e;
+
+	--code-background: #272727;
+	--code-normal: #FFFFFF;
+	--code-comment: #C0B0C2;
+	--code-function: #FCA4E4;
+	--code-keyword: #FCA4E4;
+	--code-string: #C28DFC;
+	--code-important: #FFDAA9;
+	--code-property: #9BE3FF;
+
+	--heading-color-odd: #FCA4E4;
+	--heading-color-even: #5BCDFA;
+	--color-red: #FF7B7B;
+	--color-orange: #FFDAA9;
+	--color-yellow: #FFE4C2;
+	--color-green: #91DFA6;
+	--color-cyan: #84D6FF;
+	--color-blue: #5BCDFA;
+	--color-purple: #C6A0F6;
+}
+
+.workspace-tab-header-container {
+	background-color: #272727;
+}
+
+.workspace-tab-header.is-active,
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+	background-color: #272727;
+}
+
+.workspace-tab-header:not(.is-active),
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
+	background-color: #000000;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+	color: #FFFFFF;
+}
+
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner-title {
+	color: #b1b1b1;
+}
+
+.workspace-tabs:not(.mod-active) .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+	color: #b1b1b1;
+}
+
+.workspace-tabs:not(.mod-active) .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-title {
+	color: #6e6e6e;
+}
+
+.workspace-leaf-resize-handle,
+.workspace-divider {
+	background-color: #3e3e3e;
+}
+
+.workspace-leaf-resize-handle:hover {
+	background-color: #FCA4E44F;
+}
+
+.modal.mod-settings .setting-item:hover,
+.modal.mod-settings .vertical-tab-nav-item:hover {
+	background-color: var(--background-modifier-hover);
+}
+.modal.mod-settings {
+	border: 2px solid var(--interactive-accent);
+}
+
+.is-popout-window {
+	box-shadow: inset 0 0 0 2px var(--interactive-accent);
+}
+
+.prompt,
+.suggestion-container {
+	background-color: #272727;
+}
+
+.cm-selectionBackground,
+.cm-content ::selection {
+	background-color: #FCA4E466 !important;
+}
+
+.cm-selectionMatch {
+	background-color: #00000000;
+}
+
+.cm-editor .cm-active.cm-line,
+.cm-editor .cm-activeLine {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: transparent !important;
+	border-block: 1px solid #545454;
+}
+
+.cm-editor .cm-activeLineGutter {
+	background-color: transparent !important;
+	box-shadow: inset 0 1px 0 #545454, inset 0 -1px 0 #545454;
+}
+
+.cm-editor .cm-lineNumbers .cm-gutterElement {
+	color: #A0A0A0;
+}
+
+.cm-editor .cm-searchMatch:not(.cm-searchMatch-selected) {
+	background-color: #FCA4E4 !important;
+	color: #000000 !important;
+}
+
+.cm-editor .cm-searchMatch.cm-searchMatch-selected {
+	background-color: #5BCDFA !important;
+	color: #000000 !important;
+}
+
+.cm-matchingBracket {
+	background-color: #FF00FF;
+	color: #FFFFFF;
+}
+
+.suggestion-item.is-selected {
+	background-color: #545454;
+	color: #FFFFFF;
+
+}
+
+.tree-item-self.is-selected,
+.nav-file-title.is-active {
+	background-color: #545454;
+}
+
+.mod-cta {
+	background-color: #5BCDFA84;
+	color: #FFFFFF;
+}
+
+.mod-cta:hover {
+	background-color: #FCA4E488;
+	color: #FFFFFF;
+}
+
+a,
+.external-link {
+	color: #FCA4E4;
+}
+
+a:hover,
+.external-link:hover {
+	color: #FFD1F4;
+}
+
+.markdown-rendered :is(h1, h3, h5),
+.cm-editor :is(.cm-header-1, .cm-header-3, .cm-header-5),
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="1"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="1"] .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item-self[data-level="1"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="3"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="3"] .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item-self[data-level="3"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="5"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="5"] .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item-self[data-level="5"],
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-self *,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-self *,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-self * {
+	color: var(--heading-color-odd);
+}
+
+.markdown-rendered :is(h2, h4, h6),
+.cm-editor :is(.cm-header-2, .cm-header-4, .cm-header-6),
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="2"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="2"] .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item-self[data-level="2"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="4"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="4"] .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item-self[data-level="4"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="6"],
+.workspace-leaf-content[data-type="outline"] .tree-item[data-level="6"] .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item-self[data-level="6"],
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-self *,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-self *,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item:not(.tree-item-children .tree-item) > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-children > .tree-item > .tree-item-self * {
+	color: var(--heading-color-even);
+}
+
+.workspace-leaf-content[data-type="outline"] .tree-item-self.is-active {
+	background-color: #545454 !important;
+	color: #FFFFFF !important;
+}
+
+.workspace-leaf-content[data-type="outline"] .tree-item-self.is-active * {
+	color: #FFFFFF !important;
+}
+
+.cm-editor .cm-keyword,
+.cm-editor .cm-operator,
+.cm-editor .cm-def {
+	color: #FCA4E4;
+}
+
+.cm-editor .cm-number,
+.cm-editor .cm-string {
+	color: #C28DFC;
+}
+
+.cm-editor .cm-comment {
+	color: #C0B0C2;
+}
+
+.cm-editor .cm-atom,
+.cm-editor .cm-bool,
+.cm-editor .cm-type,
+.cm-editor .cm-variableName {
+	color: #9BE3FF;
+}
+
+.cm-editor .cm-property,
+.cm-editor .cm-attribute {
+	color: #FFFFFF;
+}
+
+.cm-editor .cm-tag {
+	color: #FCA4E4;
+}
